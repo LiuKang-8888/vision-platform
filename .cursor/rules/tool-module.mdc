@@ -1,0 +1,11 @@
+---
+description: 视觉工具模块规范
+globs: ["VisionPlatform/**/Modules.**", "VisionPlatform/**/*Tool*.cs"]
+---
+
+# Tool Module — VisionPlatform
+
+- 必须实现 `IVisionTool`：`ToolId`、`Validate`、`ExecuteAsync(CancellationToken)`。
+- 输出含 `Status`、`Elapsed`、`ErrorCode`；异常在工具内转为 Failed，不抛到 Scheduler 外。
+- Mock 与真实工具同一接口；集成测试默认 Mock。
+- 新增工具在 `Infrastructure.Tools.BuiltIn` 或未来插件程序集注册。

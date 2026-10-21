@@ -1,0 +1,20 @@
+---
+description: 开发期与运行时看门狗
+alwaysApply: true
+globs: ["VisionPlatform/**"]
+---
+
+# Watchdog — VisionPlatform
+
+## 开发过程
+
+- 任务须有：计划、文件范围、测试证据或 BLOCKED、验收 ID、剩余风险。
+
+## 运行时
+
+- `RuntimeHealthMonitor` 使用独立 Timer，不与检测 Worker 同栈阻塞。
+- 阶段 1–5：监控 + Fault + 拒绝新 Run；**不**自动写 PLC 危险线圈。
+- `PreRunAuditGate`：`RequirePreRunAudit=true` 时未确认禁止运行。
+- 软件看门狗 **不替代** 硬件安全回路。
+
+详见 `docs/watchdog.md`。

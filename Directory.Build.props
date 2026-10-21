@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <!-- 开发机仅有更高版本运行时时可向前滚动；生产仍安装 net8.0 x64 运行时 -->
+    <RollForward>LatestMajor</RollForward>
+  </PropertyGroup>
+</Project>

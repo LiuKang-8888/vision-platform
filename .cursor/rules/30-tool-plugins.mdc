@@ -1,0 +1,8 @@
+---
+description: 工具与 OCR 插件
+globs: ["src/VisionPlatform.Tools.**", "src/VisionPlatform.Runtime/**", "src/VisionPlatform.Core/Tools/**"]
+---
+# 工具插件
+- IVisionTool / ITool 注册扩展；禁止 MainWindow 业务分支（ARCH-002）。
+- OCR：IOcrEngine；Halcon 20.11 + External 占位；切换失败不得静默成功。
+- Halcon 对象仅在 Tools.Halcon 内释放。

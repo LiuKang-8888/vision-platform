@@ -1,0 +1,8 @@
+---
+description: 看门狗
+alwaysApply: true
+---
+# 看门狗
+- Timer 独立于检测 Worker（WD-002）。
+- 仅监控/告警/拒绝 Run；不自动 PLC 危险动作。
+- 见 docs/watchdog.md

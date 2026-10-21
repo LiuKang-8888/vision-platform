@@ -1,0 +1,11 @@
+---
+description: 测试与验收
+globs: ["VisionPlatform/**/tests/**", "VisionPlatform/**/*Tests/**"]
+---
+
+# Testing & Acceptance — VisionPlatform
+
+- 任务映射 `docs/acceptance_criteria.md` 条目 ID。
+- 无法执行须标 **BLOCKED** 并写原因；**禁止伪造通过**。
+- 交付：`scripts/verify.ps1` 输出或 `dotnet test` TRX。
+- Halcon/YOLO 真实推理：许可证/模型就绪后再跑 C-03/C-04。

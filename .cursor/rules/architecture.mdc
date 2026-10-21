@@ -1,0 +1,28 @@
+---
+description: VisionPlatform 分层与依赖（独立子项目）
+alwaysApply: true
+globs: ["VisionPlatform/**"]
+---
+
+# Architecture — VisionPlatform
+
+## 隔离
+
+- 本规则仅适用于 `VisionPlatform/**`。
+- **禁止**在未授权 scope 修改仓库根目录 `VM二次开发` 旧 WinForms 项目。
+
+## 依赖方向
+
+- `UI.Wpf` / `Host` → `Application` → `Core`
+- `Infrastructure.*` → `Core` + `Modules.Abstractions`
+- `Core`：无 WPF、Halcon、Modbus、ONNX
+
+## 扩展
+
+- 新算法 = 新 `IVisionTool` + 注册；不改 Scheduler 核心。
+- 新 PLC = 新 `IPlcDriver`（阶段 3+）。
+- TCP 仅 Infrastructure；Application 编排。
+
+## 阶段 6 预留
+
+- 流程图编译为 ExecutionPlan；运行态不依赖 Designer 程序集。

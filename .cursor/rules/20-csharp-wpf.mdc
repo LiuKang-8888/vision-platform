@@ -1,0 +1,8 @@
+---
+description: C# WPF MVVM
+globs: ["**/*.cs", "**/*.xaml"]
+---
+# C# / WPF
+- net8 nullable；UI 线程不阻塞推理/通讯。
+- 后台结果经 Dispatcher 回 UI。
+- IAsyncDisposable 释放资源；中文 UI。

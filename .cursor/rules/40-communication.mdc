@@ -1,0 +1,7 @@
+---
+description: TCP 与 Modbus
+globs: ["src/VisionPlatform.Communication.**"]
+---
+# 通讯
+- TCP：LengthPrefixJsonFramer；半包/上限（TCP-002/003）。
+- Modbus：映射表待定；非幂等写禁止盲重试；真 PLC 写须批准。

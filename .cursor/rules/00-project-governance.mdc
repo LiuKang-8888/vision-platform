@@ -1,0 +1,11 @@
+---
+description: 全局治理与阶段门禁
+alwaysApply: true
+globs: ["**/*"]
+---
+# 项目治理
+- 任务前：读 AGENTS.md 与本目录 rules。
+- 每阶段独立验收；未 PASS 不得宣称完成。
+- 禁止伪造测试；BLOCKED 不得标 PASS。
+- 禁止未授权修改 `../VM二次开发/**`、真 Modbus 写入、自动下载模型。
+- 交付：文件清单、测试证据、剩余风险。

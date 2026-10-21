@@ -1,0 +1,11 @@
+---
+description: TCP / PLC 通讯规范（阶段 3 起）
+globs: ["VisionPlatform/**/Infrastructure.Tcp/**", "VisionPlatform/**/Infrastructure.Plc/**"]
+---
+
+# Communication — VisionPlatform
+
+- TCP 帧：4 字节大端长度 + UTF-8 JSON；`IProtocolFramer` 处理粘包/拆包。
+- 禁止 UI 线程阻塞 Read/Write。
+- PLC：仅经 `IPlcDriver`；**Modbus TCP** 为首个真驱动；连接真设备须用户批准。
+- Sim 驱动用于验收 B-04。

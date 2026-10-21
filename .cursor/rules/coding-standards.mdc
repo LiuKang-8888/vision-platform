@@ -1,0 +1,15 @@
+---
+description: VisionPlatform C# / WPF 编码标准
+globs: ["VisionPlatform/**/*.cs"]
+---
+
+# Coding Standards — VisionPlatform
+
+- 目标 **.NET 8**，nullable 启用。
+- MVVM：View 无业务；ViewModel 不引用 Infrastructure 具体类型。
+- 异步：避免 `async void`（事件处理器除外）。
+- 错误：工具层用 `ToolExecutionResult`；应用层用明确 DTO，禁止空 `catch`。
+- 日志：`ILogger` 结构化字段 `RunId`、`TraceId`、`ToolId`。
+- 资源：`IAsyncDisposable` / `using`；图像句柄由 Infrastructure 管理。
+- 配置：禁止硬编码端口/路径/超时；走 `appsettings.json` + Options。
+- UI 文案与注释：**中文**为主。

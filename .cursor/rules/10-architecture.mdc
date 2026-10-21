@@ -1,0 +1,10 @@
+---
+description: 分层与模块边界
+alwaysApply: true
+globs: ["src/**", "tests/**"]
+---
+# 架构
+- App → Application → Runtime → Core
+- Communication.* / Tools.* / Infrastructure.* → Core
+- Core 无 WPF、Halcon、Modbus 实现、ONNX
+- 流程执行不依赖 UI（ARCH-004 / FLOW-003）

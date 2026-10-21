@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/VisionPlatform.App/VisionPlatform.App.csproj" />
+    <Project Path="src/VisionPlatform.Application/VisionPlatform.Application.csproj" />
+    <Project Path="src/VisionPlatform.Communication.Modbus/VisionPlatform.Communication.Modbus.csproj" />
+    <Project Path="src/VisionPlatform.Communication.Tcp/VisionPlatform.Communication.Tcp.csproj" />
+    <Project Path="src/VisionPlatform.Core/VisionPlatform.Core.csproj" />
+    <Project Path="src/VisionPlatform.Infrastructure.Logging/VisionPlatform.Infrastructure.Logging.csproj" />
+    <Project Path="src/VisionPlatform.Infrastructure.Tools.BuiltIn/VisionPlatform.Infrastructure.Tools.BuiltIn.csproj" />
+    <Project Path="src/VisionPlatform.Runtime/VisionPlatform.Runtime.csproj" />
+    <Project Path="src/VisionPlatform.Tools.Halcon/VisionPlatform.Tools.Halcon.csproj" />
+    <Project Path="src/VisionPlatform.Tools.Ocr.Abstractions/VisionPlatform.Tools.Ocr.Abstractions.csproj" />
+    <Project Path="src/VisionPlatform.Tools.Ocr.External/VisionPlatform.Tools.Ocr.External.csproj" />
+    <Project Path="src/VisionPlatform.Tools.Ocr.Halcon/VisionPlatform.Tools.Ocr.Halcon.csproj" />
+    <Project Path="src/VisionPlatform.Tools.Yolo/VisionPlatform.Tools.Yolo.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/VisionPlatform.Runtime.Tests/VisionPlatform.Runtime.Tests.csproj" />
+  </Folder>
+</Solution>
